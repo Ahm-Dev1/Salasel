@@ -4068,3 +4068,28 @@ input, select, textarea {
             transform: translateY(0);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
+		.logo-container {
+    text-align: center; /* لتوسيط الصورة داخل الـ div */
+    margin-bottom: 20px; /* لإضافة مسافة تحت الشعار وفوق النص التالي */
+}
+
+.logo-container img {
+    max-width: 150px; /* تحديد أقصى عرض للشعار (يمكنك تعديل القيمة) */
+    height: auto; /* للحفاظ على نسبة العرض إلى الارتفاع */
+    display: inline-block; /* لضمان أن margin-bottom يعمل بشكل صحيح */
+}
+
+/* يمكنك إضافة ميديا كويري لجعل الشعار أكبر على الشاشات الكبيرة إذا أردت */
+@media (min-width: 768px) {
+    .logo-container img {
+        max-width: 500px; /* عرض أكبر على الشاشات الأوسع */
+    }
+}
+
+#menu-logo{
+	width: 100%;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
